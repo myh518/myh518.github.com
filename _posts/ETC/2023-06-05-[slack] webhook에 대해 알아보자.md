@@ -47,5 +47,13 @@ tags:
 
 우선 [이곳](https://api.slack.com)으로 접속해 줍니다.
 
-접속한 뒤 아래의 그림과 같이 해주세요
+로그인이 안되어있다면 하시고  
+아래의 이미지와 같이 Your apps를 클릭해 줍니다
 
+<img src="/img/webhook/slackappweb.png">
+
+클릭했다면 아래와 같은 창이 뜰건데요.
+
+<img src="/img/webhook/appcreate.png">
+빨갛게 표시된 부분을 클릭해주시면 되겠습니다.
+<img src="/img.webhook/">
