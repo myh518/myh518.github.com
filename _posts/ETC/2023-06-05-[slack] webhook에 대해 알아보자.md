@@ -86,7 +86,7 @@ Add New Webhook to Workspace 라고 적혀있는 버튼을 눌러주시면 됩�
 import json
 import requests
  
-webhook_url = "https://hooks.slack.com/services/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"   // 웹훅주소
+webhook_url = "웹훅 주소를 입력"   #웹훅주소
 content = "WebHook Test"
 payload = {"text": content}
  
@@ -97,3 +97,6 @@ requests.post(
 {% endhighlight %}
 
 여기서 webhook_url에는 
+<img src="/img/webhook/webhookwin">
+이 사진에서 Webhook url을 카피해서 붙여넣어 주시면 됩니다  
+이렇게 해주시면
