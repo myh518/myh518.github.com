@@ -108,7 +108,7 @@ webhook 앱이 알아서 채팅을 써줍니다!
 {% highlight css %}
 import json
 import requests
-webhook_url = "웹룩 주소"
+webhook_url = "웹훅 주소"
 content = "Error"
 payload = {"text": content}
 while True:
