@@ -86,7 +86,7 @@ Add New Webhook to Workspace 라고 적혀있는 버튼을 눌러주시면 됩�
 import json
 import requests
  
-webhook_url = "웹훅 주소를 입력"   #웹훅주소
+webhook_url = "웹훅 주소를 입력"
 content = "WebHook Test"
 payload = {"text": content}
  
@@ -97,6 +97,34 @@ requests.post(
 {% endhighlight %}
 
 여기서 webhook_url에는 
-<img src="/img/webhook/webhookwin">
+<img src="/img/webhook/webhookwin.png">
 이 사진에서 Webhook url을 카피해서 붙여넣어 주시면 됩니다  
-이렇게 해주시면
+이렇게 해서 실행시켜주면
+<img src="/img/webhook/webhooktest.png">
+이렇게 놀랍게도 직접 채팅을 치지 않아도  
+webhook 앱이 알아서 채팅을 써줍니다!  
+
+그러므로 예를 들어
+{% highlight css %}
+import json
+import requests
+webhook_url = "https://hooks.slack.com/services/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"
+content = "Error"
+payload = {"text": content}
+while True:
+    try:
+        a=4
+        b=0
+        c=a%b
+    except:
+        requests.post(
+            webhook_url, data=json.dumps(payload),
+            headers={'Content-Type': 'application/json'}
+        )
+        break
+{% endhighlight %}
+이러한 코드가 있다고 치면  
+오류가 뜰시 slack으로 메세지가 가게 할수 있다는 것입니다!
+
+여기까지 slack을 통해 webhook을 써보았고요.
+안녕히계세요
