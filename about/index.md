@@ -2,7 +2,7 @@
 layout: page
 title: About Me
 tags: [About Me]
-date: 2019-12-20
+date: 2023-06-05
 comments: false
 ---
     
@@ -15,9 +15,9 @@ comments: false
 > 내가 생각해도 참 유용하고 좋은 정보인 것 같다<br/>
 
 
-> ✔️ email: 0518myh@naver.com <br/>
+> ✔️ email: 0518myh@gmail.com <br/>
 > ✔️ instagram: moonyehyeong <br/>
-> ✔️ github: myh0518 <br/>
+> ✔️ github: myh518 <br/>
 > ✔️ birth: 2010.05.18
 
 - - -
