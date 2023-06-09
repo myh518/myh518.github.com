@@ -9,8 +9,8 @@ tags:
   - app
 ---
 
-## 이 포스트에서는 slack에서 webhook을 사용하는 방법을 알아보겠습니다.
-
+# 이 포스트에서는 slack에서 webhook을 사용하는 방법을 알아보겠습니다.
+## 1.워크스페이스 개설
 우선 [slack 공식 사이트](https://slack.com/intl/ko-kr/trials?remote_promo=f4d95f0b&d=7013y000002pzFBAAY&nc=7013y000002pznPAAQ&utm_source=google&utm_medium=paid_search&utm_campaign=ppc_google_apac_kr_kr_brand_selfserve_discount&utm_content=slack-pg-ss-all-kr-brand_7013y000002pzFBAAY&utm_term=slack_exact_._slack_._e_._c_._659249920207&gad=1&gclid=CjwKCAjw-IWkBhBTEiwA2exyO2zerhUghFn_I7SxfLswuwmGpucgR4-rzgT9IQ-0RXvUVEQ09mURRRoCB1AQAvD_BwE&gclsrc=aw.ds)에 접속해 줍니다.
 
 로그인 후 아래의 그림처럼 새 워크 스페이스 개설을 눌러줍니다.  
@@ -45,6 +45,8 @@ tags:
 
 이제 webhook을 준비 및 테스트해 봅시다.
 
+## 2.Webhook
+
 우선 [이곳](https://api.slack.com)으로 접속해 줍니다.
 
 로그인이 안되어있다면 하시고  
@@ -56,4 +58,42 @@ tags:
 
 <img src="/img/webhook/appcreate.png">
 빨갛게 표시된 부분을 클릭해주시면 되겠습니다.
-<img src="/img.webhook/">
+<img src="/img/webhook/apppick.png">
+그 다음에 위 사진에 표시되어있는 부분을 클릭하시면
+<img src="/img/webhook/appname.png">
+이런 창이 뜰 것입니다.  
+여기서는 사진과 같이 해주시면 됩니다.  
+여기까지 하셨다면 이제 webhook기능을 선택해주셔야합니다.  
+<img src="/img/webhook/pickwebhook.png">
+사진과 같이 Incoming Webhooks를 선택해주시면
+<img src="/img/webhook/onoff.png">
+위와 같은 창이 뜨게 될것인데요,  
+여기서는 사진과 같이 off로 되어있는 버튼을 on으로 바꾼 뒤  
+Add New Webhook to Workspace 라고 적혀있는 버튼을 눌러주시면 됩니다.
+<img src="/img/webhook/channalpick.png">
+이제 선택했던 워크스페이스의 채널 중 webhook을 적용시킬 채널을 선택해주세요
+<img src="/img/webhook/webhookwin.png">
+자 이제 끝났습니다.  
+테스트 해 볼까요?
+
+
+## 3.테스트
+
+자 테스트를 위해 파이썬에 아래와 같은 코드를  
+작성해 주겠습니다
+
+{% highlight css %}
+import json
+import requests
+ 
+webhook_url = "https://hooks.slack.com/services/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"   // 웹훅주소
+content = "WebHook Test"
+payload = {"text": content}
+ 
+requests.post(
+    webhook_url, data=json.dumps(payload),
+    headers={'Content-Type': 'application/json'}
+)
+{% endhighlight %}
+
+여기서 webhook_url에는 
