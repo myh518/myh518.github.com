@@ -1,6 +1,7 @@
 ---
 layout: post
-title: '[Python]파이썬은 얼마나 쉬운 언어인가'
+title: '[Python]왜 파이썬을 첫 언어로 정하는가'
+excerpt: 파이썬과 C#을 비교해보자
 category: Python
 tags:
   - Python
