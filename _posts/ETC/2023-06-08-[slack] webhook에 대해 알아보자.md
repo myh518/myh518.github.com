@@ -11,7 +11,7 @@ tags:
 
 # 이 포스트에서는 slack에서 webhook을 사용하는 방법을 알아보겠습니다.
 ## 1.워크스페이스 개설
-우선 [slack 공식 사이트](https://slack.com/intl/ko-kr/trials?remote_promo=f4d95f0b&d=7013y000002pzFBAAY&nc=7013y000002pznPAAQ&utm_source=google&utm_medium=paid_search&utm_campaign=ppc_google_apac_kr_kr_brand_selfserve_discount&utm_content=slack-pg-ss-all-kr-brand_7013y000002pzFBAAY&utm_term=slack_exact_._slack_._e_._c_._659249920207&gad=1&gclid=CjwKCAjw-IWkBhBTEiwA2exyO2zerhUghFn_I7SxfLswuwmGpucgR4-rzgT9IQ-0RXvUVEQ09mURRRoCB1AQAvD_BwE&gclsrc=aw.ds)에 접속해 줍니다.
+우선 [slack 공식 사이트 : slack.com](https://slack.com)에 접속해 줍니다.
 
 로그인 후 아래의 그림처럼 새 워크 스페이스 개설을 눌러줍니다.  
 <img src="/img/webhook/slackweb.png">
@@ -47,7 +47,7 @@ tags:
 
 ## 2.Webhook
 
-우선 [이곳](https://api.slack.com)으로 접속해 줍니다.
+우선 [api.slack.com](https://api.slack.com)으로 접속해 줍니다.
 
 로그인이 안되어있다면 하시고  
 아래의 이미지와 같이 Your apps를 클릭해 줍니다
