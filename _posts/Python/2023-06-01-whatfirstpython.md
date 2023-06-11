@@ -23,3 +23,5 @@ tags:
 비교하며 알아보도록 하겠습니다.  
 <hr>
 # 1.변수
+{% highlight css %}
+{% endhighlight %}
