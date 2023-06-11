@@ -23,5 +23,21 @@ tags:
 비교하며 알아보도록 하겠습니다.  
 <hr>
 # 1.변수
+
+### Python의 변수
+
 {% highlight css %}
+a=100
+b="hello world"
+c=1.5
 {% endhighlight %}
+
+위와 똑같은 코드를 C#으로 표현하면?
+
+{% highlight css %}
+int a = 100;
+str b = "hello world";
+float c = 1.5f;
+{% endhighlight %}
+
+자 벌써부터 '아 파이썬은 쉬웠구나'라는 생각이 드시죠?
