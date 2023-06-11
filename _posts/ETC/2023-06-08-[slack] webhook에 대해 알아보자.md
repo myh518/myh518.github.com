@@ -98,7 +98,7 @@ requests.post(
 
 여기서 webhook_url에는 
 <img src="/img/webhook/webhookwin.png">
-이 사진에서 Webhook url을 카피해서 붙여넣어 주시면 됩니다  
+이 사진에서 Webhook URL을 카피해서 붙여넣어 주시면 됩니다  
 이렇게 해서 실행시켜주면
 <img src="/img/webhook/webhooktest.png">
 이렇게 놀랍게도 직접 채팅을 치지 않아도  
